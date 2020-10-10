@@ -1,0 +1,36 @@
+{
+  "name": "YouTube Rotate",
+  "version": "0.0.0.1",
+  "description": "Allows easy rotation of a youtube video by 180 degrees (flips it upside down).",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "commands": {
+    "toggle-rotate": {
+      "suggested_key": {
+        "default": "Ctrl+Y",
+        "mac": "Command+Y"
+      },
+      "description": "Toggle youtube video rotation"
+    }
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/rotate_youtube16.png",
+      "32": "images/rotate_youtube32.png",
+      "48": "images/rotate_youtube48.png",
+      "128": "images/rotate_youtube128.png"
+    }
+  },
+  "icons": {
+    "16": "images/rotate_youtube16.png",
+    "32": "images/rotate_youtube32.png",
+    "48": "images/rotate_youtube48.png",
+    "128": "images/rotate_youtube128.png"
+  },
+  "manifest_version": 2
+}
